@@ -75,9 +75,9 @@ export default class Main extends Component {
           />
           <SubmitButton loading={loading}>
             {loading ? (
-              <FaSpinner color="#333" size={14} />
+              <FaSpinner color={'#333'} size={14} />
             ) : (
-              <FaPlus color="#333" size={14} />
+              <FaPlus color={'#333'} size={14} />
             )}
           </SubmitButton>
         </Form>
@@ -85,7 +85,7 @@ export default class Main extends Component {
           {repositories.map((repository) => (
             <li key={repository}>
               <span>{repository.name}</span>
-              <a target="_blank" href={repository.site}>
+              <a target={'_blank'} rel={'noopenner'} href={repository.site}>
                 Repositório
               </a>
             </li>

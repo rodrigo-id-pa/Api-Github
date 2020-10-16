@@ -9,6 +9,8 @@ import styled from 'styled-components';
 
 import GlobalStyles from './styles/global';
 
+import { FaEye } from 'react-icons/fa';
+
 function App() {
   const [theme, setTheme] = useState('dark');
 
@@ -32,7 +34,9 @@ function App() {
       <>
         <GlobalStyles />
         <Routes />
-        <ButtonChange onClick={toggleTheme}>mode</ButtonChange>
+        <ButtonChange onClick={toggleTheme}>
+          <FaEye size={30} />
+        </ButtonChange>
       </>
     </ThemeProvider>
   );
